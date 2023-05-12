@@ -1,0 +1,14 @@
+Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\user\AppData\Local\Programs\Python\Python311\python assignment 3 practice.py
+What is the CO2 composition?0.0164
+What is the n2 composition?0.0236
+What is the h2s composition?0.1841
+What is the h2o composition?0
+What is the measured gas gravity?0.6992
+The corrected gas gravity is 0.5604100657301199
+The hydrocarbon pseudo-critical pressure is 682.26 psia
+The hydrocarbon pseudo-critical temperature is 341.82 deg Rankine
+The pseudo-pressure is 799.00 psia
+The pseudo-temperature is 403.34 deg Rankine
