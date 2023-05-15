@@ -19,7 +19,7 @@ gas_gravity = float(gas_gravity)
 if co2_comp <= 0.12 or n2_comp <= 0.03 or h2s_comp <= 0:
    gas_gravity = (gas_gravity - (1.1767*h2s_comp) - (1.5196*co2_comp) - (0.9672*n2_comp) - \
                    (0.622*h2o_comp))/(1- h2s_comp - co2_comp - n2_comp - h2o_comp)
-   print('The corrected gas gravity is {0:.1f}', gas_gravity)
+   print('The corrected gas gravity is {0:.1f}'.format(gas_gravity))
 
 # continuing after the if block
 
@@ -30,8 +30,10 @@ t_pch = 169.2 + (349.5*gas_gravity) - (74.0*gas_gravity**2)
 
 # computing the pseudo-pressure and pseudo-temperature for the entire mixture (hydrocarbon + non-hydrocarbon)
 
-p_pc = (1 - h2s_comp - co2_comp - n2_comp - h2o_comp)*p_pch + (1306*h2s_comp) + (1071*co2_comp) + (493.1*n2_comp) + (3200.1*h2o_comp)
-t_pc = (1 - h2s_comp - co2_comp - n2_comp - h2o_comp)*t_pch + (672.35*h2s_comp) + (547.58*co2_comp) + (227.16*n2_comp) + (1164.9*h2o_comp)
+p_pc = (1 - h2s_comp - co2_comp - n2_comp - h2o_comp)*p_pch + (1306*h2s_comp)+ \
+(1071*co2_comp) + (493.1*n2_comp) + (3200.1*h2o_comp)
+t_pc = (1 - h2s_comp - co2_comp - n2_comp - h2o_comp)*t_pch + (672.35*h2s_comp) + \
+(547.58*co2_comp) + (227.16*n2_comp) + (1164.9*h2o_comp)
 
 # displaying the results.
 
