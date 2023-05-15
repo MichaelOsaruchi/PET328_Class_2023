@@ -19,7 +19,7 @@ gas_gravity = float(gas_gravity)
 if co2_comp <= 0.12 or n2_comp <= 0.03 or h2s_comp <= 0:
    gas_gravity = (gas_gravity - (1.1767*h2s_comp) - (1.5196*co2_comp) - (0.9672*n2_comp) - \
                    (0.622*h2o_comp))/(1- h2s_comp - co2_comp - n2_comp - h2o_comp)
-   print('The corrected gas gravity is', gas_gravity)
+   print('The corrected gas gravity is {0:.1f}', gas_gravity)
 
 # continuing after the if block
 
@@ -35,9 +35,9 @@ t_pc = (1 - h2s_comp - co2_comp - n2_comp - h2o_comp)*t_pch + (672.35*h2s_comp) 
 
 # displaying the results.
 
-print('The hydrocarbon pseudo-critical pressure is {0:.2f} psia'.format(p_pch))
-print('The hydrocarbon pseudo-critical temperature is {0:.2f} deg Rankine'.format(t_pch))
-print('The pseudo-pressure is {0:.2f} psia'.format(p_pc))
-print('The pseudo-temperature is {0:.2f} deg Rankine'.format(t_pc))
+print('The hydrocarbon pseudo-critical pressure is {0:.1f} psia'.format(p_pch))
+print('The hydrocarbon pseudo-critical temperature is {0:.1f} deg Rankine'.format(t_pch))
+print('The pseudo-pressure is {0:.1f} psia'.format(p_pc))
+print('The pseudo-temperature is {0:.1f} deg Rankine'.format(t_pc))
 
  
