@@ -17,7 +17,7 @@ gas_gravity = float(gas_gravity)
 # the if statement
 
 if co2_comp <= 0.12 or n2_comp <= 0.03 or h2s_comp <= 0:
-    print('The given gas gravity is ',gas_gravity)
+    print('The given gas gravity is',gas_gravity)
 
 # continuing after the if block
 
